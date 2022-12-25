@@ -885,7 +885,7 @@ entities:
     type: GridAtmosphere
   - type: GasTileOverlay
   - type: RadiationGridResistance
-  - id: Forge
+  - id: forge
     type: BecomesStation
 - uid: 1
   type: ReinforcedWindow
@@ -918,7 +918,7 @@ entities:
   - pos: 3.5,-3.5
     parent: 0
     type: Transform
-  - SecondsUntilStateChange: -6678.8423
+  - SecondsUntilStateChange: -16411.39
     state: Closing
     type: Door
   - inputs:
@@ -992,7 +992,7 @@ entities:
   - pos: 12.5,-3.5
     parent: 0
     type: Transform
-  - SecondsUntilStateChange: -6706.609
+  - SecondsUntilStateChange: -16439.156
     state: Closing
     type: Door
   - inputs:
@@ -1016,9 +1016,9 @@ entities:
     parent: 0
     type: Transform
 - uid: 16
-  type: LockerSalvageSpecialistFilled
+  type: SpawnPointQuartermaster
   components:
-  - pos: 5.5,-1.5
+  - pos: 7.5,3.5
     parent: 0
     type: Transform
 - uid: 17
@@ -1298,7 +1298,7 @@ entities:
   - pos: 9.5,-3.5
     parent: 0
     type: Transform
-  - SecondsUntilStateChange: -6703.4087
+  - SecondsUntilStateChange: -16435.957
     state: Closing
     type: Door
   - inputs:
@@ -1607,7 +1607,7 @@ entities:
   - pos: 3.5,-2.5
     parent: 0
     type: Transform
-  - SecondsUntilStateChange: -6678.8423
+  - SecondsUntilStateChange: -16411.39
     state: Closing
     type: Door
   - inputs:
@@ -1874,7 +1874,7 @@ entities:
   - pos: 3.5,-1.5
     parent: 0
     type: Transform
-  - SecondsUntilStateChange: -6678.8423
+  - SecondsUntilStateChange: -16411.39
     state: Closing
     type: Door
   - inputs:
@@ -2007,7 +2007,8 @@ entities:
     pos: 6.5,-9.5
     parent: 0
     type: Transform
-  - type: Thruster
+  - enabled: False
+    type: Thruster
 - uid: 160
   type: CableApcExtension
   components:
@@ -2602,9 +2603,9 @@ entities:
     parent: 0
     type: Transform
 - uid: 248
-  type: LockerSalvageSpecialistFilled
+  type: SpawnPointQuartermaster
   components:
-  - pos: 5.5,-4.5
+  - pos: 8.5,3.5
     parent: 0
     type: Transform
 - uid: 249
@@ -2758,6 +2759,12 @@ entities:
   - pos: 10.5,0.5
     parent: 0
     type: Transform
+- uid: 274
+  type: SpawnPointQuartermaster
+  components:
+  - pos: 6.5,3.5
+    parent: 0
+    type: Transform
 - uid: 275
   type: ClothingOuterWinterMiner
   components:
@@ -2888,7 +2895,7 @@ entities:
   - pos: 2.5,-4.5
     parent: 0
     type: Transform
-  - SecondsUntilStateChange: -7420.039
+  - SecondsUntilStateChange: -17152.588
     state: Opening
     type: Door
   - inputs:
@@ -2904,7 +2911,7 @@ entities:
   - pos: 1.5,-4.5
     parent: 0
     type: Transform
-  - SecondsUntilStateChange: -7420.039
+  - SecondsUntilStateChange: -17152.588
     state: Opening
     type: Door
   - inputs:
@@ -2920,7 +2927,7 @@ entities:
   - pos: 0.5,-5.5
     parent: 0
     type: Transform
-  - SecondsUntilStateChange: -7420.039
+  - SecondsUntilStateChange: -17152.588
     state: Opening
     type: Door
   - inputs:
@@ -2936,7 +2943,7 @@ entities:
   - pos: 0.5,-6.5
     parent: 0
     type: Transform
-  - SecondsUntilStateChange: -7420.039
+  - SecondsUntilStateChange: -17152.588
     state: Opening
     type: Door
   - inputs:
@@ -2952,7 +2959,7 @@ entities:
   - pos: 1.5,-8.5
     parent: 0
     type: Transform
-  - SecondsUntilStateChange: -7420.039
+  - SecondsUntilStateChange: -17152.588
     state: Opening
     type: Door
   - inputs:
@@ -2968,7 +2975,7 @@ entities:
   - pos: 6.5,-8.5
     parent: 0
     type: Transform
-  - SecondsUntilStateChange: -7420.039
+  - SecondsUntilStateChange: -17152.588
     state: Opening
     type: Door
   - inputs:
@@ -2984,7 +2991,7 @@ entities:
   - pos: 5.5,-8.5
     parent: 0
     type: Transform
-  - SecondsUntilStateChange: -7420.039
+  - SecondsUntilStateChange: -17152.588
     state: Opening
     type: Door
   - inputs:
@@ -3029,7 +3036,7 @@ entities:
   - pos: 7.5,4.5
     parent: 0
     type: Transform
-  - SecondsUntilStateChange: -7347.1562
+  - SecondsUntilStateChange: -17079.705
     state: Opening
     type: Door
   - inputs:
@@ -3045,7 +3052,7 @@ entities:
   - pos: 8.5,4.5
     parent: 0
     type: Transform
-  - SecondsUntilStateChange: -7347.1562
+  - SecondsUntilStateChange: -17079.705
     state: Opening
     type: Door
   - inputs:
@@ -3061,7 +3068,7 @@ entities:
   - pos: 9.5,4.5
     parent: 0
     type: Transform
-  - SecondsUntilStateChange: -7347.1562
+  - SecondsUntilStateChange: -17079.705
     state: Opening
     type: Door
   - inputs:
@@ -3077,7 +3084,7 @@ entities:
   - pos: 9.5,2.5
     parent: 0
     type: Transform
-  - SecondsUntilStateChange: -7347.1562
+  - SecondsUntilStateChange: -17079.705
     state: Opening
     type: Door
   - inputs:
@@ -3093,7 +3100,7 @@ entities:
   - pos: 10.5,2.5
     parent: 0
     type: Transform
-  - SecondsUntilStateChange: -7347.1562
+  - SecondsUntilStateChange: -17079.705
     state: Opening
     type: Door
   - inputs:
@@ -3109,7 +3116,7 @@ entities:
   - pos: 11.5,1.5
     parent: 0
     type: Transform
-  - SecondsUntilStateChange: -7347.1562
+  - SecondsUntilStateChange: -17079.705
     state: Opening
     type: Door
   - inputs:
@@ -3125,7 +3132,7 @@ entities:
   - pos: 11.5,0.5
     parent: 0
     type: Transform
-  - SecondsUntilStateChange: -7347.1562
+  - SecondsUntilStateChange: -17079.705
     state: Opening
     type: Door
   - inputs:
@@ -3997,6 +4004,36 @@ entities:
   type: CableApcExtension
   components:
   - pos: 6.5,-7.5
+    parent: 0
+    type: Transform
+- uid: 433
+  type: LockerSalvageSpecialistFilled
+  components:
+  - pos: 5.5,-1.5
+    parent: 0
+    type: Transform
+- uid: 434
+  type: LockerSalvageSpecialistFilled
+  components:
+  - pos: 5.5,-4.5
+    parent: 0
+    type: Transform
+- uid: 435
+  type: SpawnPointSalvageSpecialist
+  components:
+  - pos: 6.5,3.5
+    parent: 0
+    type: Transform
+- uid: 436
+  type: SpawnPointSalvageSpecialist
+  components:
+  - pos: 7.5,3.5
+    parent: 0
+    type: Transform
+- uid: 437
+  type: SpawnPointSalvageSpecialist
+  components:
+  - pos: 8.5,3.5
     parent: 0
     type: Transform
 ...
