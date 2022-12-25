@@ -97,8 +97,7 @@ entities:
 - uid: 0
   components:
   - type: MetaData
-  - pos: 28.12231,1.5140765
-    parent: 229
+  - parent: 229
     type: Transform
   - chunks:
       -1,-1:
@@ -106,10 +105,10 @@ entities:
         tiles: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABXAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAVwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABXAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAVwAAAA==
       0,-1:
         ind: 0,-1
-        tiles: AAAAAAAAAABXAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAVwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABXAAAAVwAAAFcAAAAAAAAAAAAAAAAAAAAAAAAAVwAAAFcAAABXAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABXAAAAWAAAAFgAAABYAAAAWAAAAAAAAAAAAAAAWAAAAFgAAABYAAAAWAAAAFcAAAAAAAAAAAAAAAAAAAAAAAAAVwAAAFgAAABYAAAAWAAAAFgAAAAAAAAAAAAAAFgAAABIAAAAWAAAAFgAAABXAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABYAAAAWAAAAEgAAABYAAAAAAAAAAAAAABYAAAASAAAAFgAAABYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWAAAAFgAAABIAAAAWAAAAAAAAAAAAAAAWAAAAEgAAABYAAAAWAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAVwAAAFgAAABYAAAAWAAAAFgAAABXAAAAVwAAAFgAAABIAAAAWAAAAFgAAABXAAAAAAAAAAAAAAAAAAAAAAAAAFcAAABYAAAAPgAAAD4AAABYAAAAWAAAAFgAAABYAAAAWAAAAFgAAABYAAAAVwAAAAAAAAAAAAAAAAAAAAAAAABYAAAAWAAAAD4AAAA+AAAAPgAAAD4AAAA+AAAAPgAAAFgAAABYAAAAWAAAAFgAAABXAAAAAAAAAAAAAAAAAAAAWAAAAD4AAAA+AAAAPgAAAD4AAAA+AAAAPgAAAD4AAABYAAAAWAAAAEgAAABYAAAAVwAAAAAAAAAAAAAAAAAAAFgAAAA+AAAAPgAAAFgAAABYAAAAWAAAABoAAABYAAAAWAAAAEgAAABIAAAAWAAAAFgAAAAAAAAAAAAAAAAAAABYAAAAWAAAAFgAAABYAAAAFQAAABUAAAAVAAAAFQAAAFgAAABYAAAAWAAAAFgAAABYAAAAAAAAAAAAAAAAAAAAVwAAAFcAAABXAAAAGgAAABoAAAAaAAAAFQAAABUAAAAVAAAAWAAAADQAAAA0AAAAWAAAAAAAAAAAAAAAAAAAAAAAAABXAAAAVwAAABoAAAAaAAAAGgAAABUAAAAVAAAAFQAAABoAAAA0AAAANAAAAFgAAAAAAAAAAAAAAAAAAAAAAAAAVwAAAFcAAAAaAAAAGgAAABoAAAAVAAAAFQAAABUAAABYAAAASAAAAEgAAABYAAAAAAAAAAAAAAAAAAAAWAAAAFgAAABYAAAAWAAAAFgAAABYAAAAWAAAABoAAABYAAAAWAAAAFgAAABYAAAAWAAAAAAAAAAAAAAAAAAAAA==
+        tiles: AAAAAAAAAABXAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAVwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABXAAAAVwAAAFcAAAAAAAAAAAAAAAAAAAAAAAAAVwAAAFcAAABXAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABXAAAAWAAAAFgAAABYAAAAWAAAAAAAAAAAAAAAWAAAAFgAAABYAAAAWAAAAFcAAAAAAAAAAAAAAAAAAAAAAAAAVwAAAFgAAABYAAAAWAAAAFgAAAAAAAAAAAAAAFgAAABIAAAAWAAAAFgAAABXAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABYAAAAWAAAAEgAAABYAAAAAAAAAAAAAABYAAAASAAAAFgAAABYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWAAAAFgAAABIAAAAWAAAAAAAAAAAAAAAWAAAAEgAAABYAAAAWAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAVwAAAFgAAABYAAAAWAAAAFgAAABXAAAAVwAAAFgAAABIAAAAWAAAAFgAAABXAAAAAAAAAAAAAAAAAAAAAAAAAFcAAABYAAAAPgAAAT4AAAJYAAAAWAAAAFgAAABYAAAAWAAAAFgAAABYAAAAVwAAAAAAAAAAAAAAAAAAAAAAAABYAAAAWAAAAD4AAAE+AAABPgAAAj4AAAA+AAAAPgAAAFgAAABYAAAAWAAAAFgAAABXAAAAAAAAAAAAAAAAAAAAWAAAAD4AAAM+AAACPgAAAj4AAAM+AAADPgAAAD4AAABYAAAAWAAAAEgAAABYAAAAVwAAAAAAAAAAAAAAAAAAAFgAAAA+AAADPgAAAFgAAABYAAAAWAAAABoAAABYAAAAWAAAAEgAAABIAAAAWAAAAFgAAAAAAAAAAAAAAAAAAABYAAAAWAAAAFgAAABYAAAAFQAAAhUAAAIVAAABFQAAAFgAAABYAAAAWAAAAFgAAABYAAAAAAAAAAAAAAAAAAAAVwAAAFcAAABXAAAAGgAAAxoAAAMaAAAAFQAAAxUAAAEVAAADWAAAADQAAAA0AAAAWAAAAAAAAAAAAAAAAAAAAAAAAABXAAAAVwAAABoAAAEaAAABGgAAARUAAAEVAAADFQAAABoAAAA0AAAANAAAAFgAAAAAAAAAAAAAAAAAAAAAAAAAVwAAAFcAAAAaAAAAGgAAARoAAAAVAAAAFQAAABUAAAFYAAAASAAAAEgAAABYAAAAAAAAAAAAAAAAAAAAWAAAAFgAAABYAAAAWAAAAFgAAABYAAAAWAAAABoAAAFYAAAAWAAAAFgAAABYAAAAWAAAAAAAAAAAAAAAAAAAAA==
       0,0:
         ind: 0,0
-        tiles: WAAAABUAAAAVAAAAFQAAABUAAABYAAAAVQAAAFUAAABVAAAAVQAAAFUAAABYAAAAAAAAAAAAAAAAAAAAAAAAAFgAAAAVAAAAFQAAABUAAAAVAAAAGgAAAFUAAABVAAAAVQAAAFUAAABVAAAAWAAAAAAAAAAAAAAAAAAAAAAAAABYAAAAWAAAAFgAAAAVAAAAFQAAAFgAAABVAAAAVQAAAFUAAABYAAAAWAAAAFgAAAAAAAAAAAAAAAAAAAAAAAAAVwAAAFcAAABYAAAAFQAAABUAAABYAAAAVQAAAFUAAABVAAAAWAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABXAAAAWAAAAFgAAABYAAAAWAAAAFgAAABYAAAAWAAAAFgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAVwAAAFcAAABXAAAAVwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+        tiles: WAAAABUAAAIVAAABFQAAABUAAANYAAAAVQAAAFUAAANVAAACVQAAA1UAAABYAAAAAAAAAAAAAAAAAAAAAAAAAFgAAAAVAAAAFQAAAhUAAAMVAAADGgAAAlUAAAJVAAACVQAAA1UAAANVAAACWAAAAAAAAAAAAAAAAAAAAAAAAABYAAAAWAAAAFgAAAAVAAADFQAAAFgAAABVAAADVQAAAVUAAABYAAAAWAAAAFgAAAAAAAAAAAAAAAAAAAAAAAAAVwAAAFcAAABYAAAAFQAAARUAAABYAAAAVQAAA1UAAANVAAABWAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABXAAAAWAAAAFgAAABYAAAAWAAAAFgAAABYAAAAWAAAAFgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAVwAAAFcAAABXAAAAVwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
       -1,0:
         ind: -1,0
         tiles: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAVwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABXAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
@@ -171,147 +170,157 @@ entities:
           color: '#FFFFFFFF'
           id: BrickTileDarkCornerSe
           coordinates: 7,-5
-        14:
+        10:
           color: '#A4610696'
           id: BrickTileWhiteCornerSw
           coordinates: 4,-5
-        15:
+        11:
           color: '#A4610696'
           id: BrickTileWhiteCornerSe
           coordinates: 7,-5
-        16:
+        12:
           color: '#FFFFFFFF'
           id: BrickTileDarkInnerNe
           coordinates: 3,-7
-        17:
+        13:
           color: '#A4610696'
           id: BrickTileWhiteInnerNe
           coordinates: 3,-7
-        32:
+        28:
           color: '#A4610696'
           id: WarnLineE
           coordinates: 8,-4
-        33:
+        29:
           color: '#A4610696'
           id: WarnLineE
           coordinates: 8,-3
-        34:
+        30:
           color: '#A4610696'
           id: WarnLineE
           coordinates: 11,-3
-        35:
+        31:
           color: '#A4610696'
           id: WarnLineE
           coordinates: 11,-4
-        36:
+        32:
           color: '#A4610696'
           id: WarnLineS
           coordinates: 10,-4
-        37:
+        33:
           color: '#A4610696'
           id: WarnLineS
           coordinates: 10,-3
-        38:
+        34:
           angle: 1.5707963267948966 rad
           color: '#A4610696'
           id: LoadingArea
           coordinates: 5,-4
-        39:
+        35:
           angle: 1.5707963267948966 rad
           color: '#A4610696'
           id: Box
           coordinates: 4,-2
-        40:
+        36:
           angle: 1.5707963267948966 rad
           color: '#A4610696'
           id: Box
           coordinates: 4,-3
-        41:
+        37:
           angle: 1.5707963267948966 rad
           color: '#A4610696'
           id: Box
           coordinates: 5,-2
-        42:
+        38:
           angle: 1.5707963267948966 rad
           color: '#A4610696'
           id: Box
           coordinates: 5,-3
-        43:
+        39:
           color: '#DE3A3A96'
           id: StandClear
           coordinates: 3,-2
-        44:
+        40:
           color: '#DE3A3A96'
           id: StandClear
           coordinates: 3,-3
-        45:
+        41:
           color: '#DE3A3A96'
           id: StandClear
           coordinates: 7,-1
-        46:
+        42:
           color: '#DE3A3A96'
           id: StandClear
           coordinates: 6,-6
-        47:
+        43:
           color: '#DE3A3A96'
           id: StandClear
           coordinates: 9,-3
-        48:
+        44:
           color: '#A4610650'
           id: Dirt
           coordinates: 3.9193993,-2.1839623
-        49:
+        45:
           color: '#A4610650'
           id: Dirt
           coordinates: 3.9903946,-2.907709
-        50:
+        46:
           color: '#A4610650'
           id: Dirt
           coordinates: 4.7997246,-3.1347668
-        51:
+        47:
           color: '#A4610650'
           id: Dirt
           coordinates: 4.7997246,-2.1839623
-        52:
+        48:
           color: '#A4610695'
           id: Dirt
           coordinates: 4.0329895,-3.007047
+        49:
+          cleanable: True
+          color: '#A4610695'
+          id: Dirt
+          coordinates: 5,-3
+        50:
+          cleanable: True
+          color: '#A4610695'
+          id: Dirt
+          coordinates: 5,-2
+        51:
+          cleanable: True
+          color: '#A4610695'
+          id: Dirt
+          coordinates: 4,-2
+        52:
+          cleanable: True
+          color: '#A4610695'
+          id: Dirt
+          coordinates: 4,-3
         53:
           cleanable: True
           color: '#A4610695'
           id: Dirt
-          coordinates: 5,-3
+          coordinates: 3,-3
         54:
           cleanable: True
           color: '#A4610695'
           id: Dirt
-          coordinates: 5,-2
+          coordinates: 3,-2
         55:
           cleanable: True
           color: '#A4610695'
           id: Dirt
-          coordinates: 4,-2
+          coordinates: 3,-3
         56:
           cleanable: True
           color: '#A4610695'
           id: Dirt
-          coordinates: 4,-3
+          coordinates: 5,-4
         57:
           cleanable: True
           color: '#A4610695'
           id: Dirt
-          coordinates: 3,-3
+          coordinates: 4,-4
         58:
-          cleanable: True
-          color: '#A4610695'
-          id: Dirt
-          coordinates: 3,-2
-        59:
-          cleanable: True
-          color: '#A4610695'
-          id: Dirt
-          coordinates: 3,-3
-        60:
           cleanable: True
           color: '#A4610695'
           id: Dirt
@@ -320,112 +329,102 @@ entities:
           cleanable: True
           color: '#A4610695'
           id: Dirt
-          coordinates: 4,-4
-        62:
-          cleanable: True
-          color: '#A4610695'
-          id: Dirt
-          coordinates: 5,-4
+          coordinates: 7,-3
         63:
           cleanable: True
           color: '#A4610695'
           id: Dirt
-          coordinates: 6,-3
+          coordinates: 8,-3
         64:
           cleanable: True
           color: '#A4610695'
           id: Dirt
-          coordinates: 6,-4
+          coordinates: 8,-4
         65:
           cleanable: True
           color: '#A4610695'
           id: Dirt
-          coordinates: 7,-3
-        67:
-          cleanable: True
-          color: '#A4610695'
-          id: Dirt
-          coordinates: 6,-4
-        68:
-          cleanable: True
-          color: '#A4610695'
-          id: Dirt
-          coordinates: 8,-3
-        69:
-          cleanable: True
-          color: '#A4610695'
-          id: Dirt
-          coordinates: 8,-4
-        70:
-          cleanable: True
-          color: '#A4610695'
-          id: Dirt
           coordinates: 11,-4
-        71:
+        66:
           cleanable: True
           color: '#A4610695'
           id: Dirt
           coordinates: 10,-4
-        72:
+        67:
           cleanable: True
           color: '#A4610695'
           id: Dirt
           coordinates: 10,-3
-        73:
+        68:
           cleanable: True
           color: '#A4610695'
           id: Dirt
           coordinates: 11,-3
-        74:
+        69:
           cleanable: True
           color: '#A4610695'
           id: Dirt
           coordinates: 10,-3
-        82:
-          cleanable: True
-          color: '#A4610695'
-          id: DirtLight
-          coordinates: 6,-4
-        83:
+        78:
           cleanable: True
           color: '#A4610695'
           id: DirtLight
           coordinates: 7,-3
-        84:
+        79:
           cleanable: True
           color: '#A4610695'
           id: DirtMedium
           coordinates: 8,-3
-        85:
+        80:
           cleanable: True
           color: '#A4610695'
           id: DirtMedium
           coordinates: 8,-4
-        87:
+        81:
           cleanable: True
           color: '#A4610695'
           id: DirtHeavy
           coordinates: 7,-2
-        88:
+        82:
           cleanable: True
           color: '#A4610695'
           id: DirtLight
           coordinates: 7,-4
-        89:
-          cleanable: True
-          color: '#A4610695'
-          id: DirtLight
-          coordinates: 6,-4
-        90:
+        84:
           cleanable: True
           color: '#A4610695'
           id: DirtLight
           coordinates: 7,-3
-        91:
+        85:
           cleanable: True
           color: '#A4610695'
           id: DirtMedium
           coordinates: 7,-3
+        86:
+          cleanable: True
+          color: '#A4610695'
+          id: DirtMedium
+          coordinates: 6,-7
+        87:
+          cleanable: True
+          color: '#A4610695'
+          id: DirtHeavy
+          coordinates: 5,-7
+        88:
+          cleanable: True
+          color: '#A4610695'
+          id: DirtHeavy
+          coordinates: 3,-8
+        89:
+          cleanable: True
+          color: '#A4610695'
+          id: DirtLight
+          coordinates: 2,-8
+        91:
+          cleanable: True
+          color: '#A4610695'
+          id: DirtMedium
+          coordinates: 4,-7
         92:
           cleanable: True
           color: '#A4610695'
@@ -434,201 +433,162 @@ entities:
         93:
           cleanable: True
           color: '#A4610695'
-          id: DirtHeavy
-          coordinates: 5,-7
-        94:
-          cleanable: True
-          color: '#A4610695'
-          id: DirtHeavy
+          id: DirtMedium
           coordinates: 3,-8
         95:
           cleanable: True
           color: '#A4610695'
-          id: DirtLight
-          coordinates: 2,-8
-        96:
-          cleanable: True
-          color: '#A4610695'
-          id: DirtLight
-          coordinates: 2,-9
-        97:
-          cleanable: True
-          color: '#A4610695'
-          id: DirtMedium
-          coordinates: 4,-7
-        98:
-          cleanable: True
-          color: '#A4610695'
-          id: DirtMedium
-          coordinates: 6,-7
-        99:
-          cleanable: True
-          color: '#A4610695'
-          id: DirtMedium
-          coordinates: 3,-8
-        100:
-          cleanable: True
-          color: '#A4610695'
-          id: DirtMedium
-          coordinates: 2,-9
-        101:
-          cleanable: True
-          color: '#A4610695'
           id: Dirt
           coordinates: 2,-7
-        102:
+        96:
           cleanable: True
           color: '#A4610695'
           id: Dirt
           coordinates: 2,-6
-        103:
+        97:
           cleanable: True
           color: '#A4610695'
           id: DirtHeavy
           coordinates: 1,-7
-        104:
+        98:
           cleanable: True
           color: '#A4610695'
           id: DirtHeavy
           coordinates: 2,-7
-        105:
+        99:
           cleanable: True
           color: '#A4610695'
           id: Dirt
           coordinates: 3,-8
-        106:
+        100:
           cleanable: True
           color: '#A4610695'
           id: Dirt
           coordinates: 6,-7
-        107:
+        101:
           cleanable: True
           color: '#A4610695'
           id: Dirt
           coordinates: 7,-2
-        108:
+        102:
           cleanable: True
           color: '#A4610695'
           id: Dirt
           coordinates: 0,-5
-        109:
+        103:
           cleanable: True
           color: '#A4610695'
           id: Dirt
           coordinates: 3,-1
       0,0:
-        18:
+        14:
           color: '#FFFFFFFF'
           id: BrickTileDarkCornerNw
           coordinates: 1,1
-        19:
+        15:
           color: '#FFFFFFFF'
           id: BrickTileDarkCornerNw
           coordinates: 3,3
-        20:
+        16:
           color: '#FFFFFFFF'
           id: BrickTileDarkLineW
           coordinates: 1,0
-        21:
+        17:
           color: '#FFFFFFFF'
           id: BrickTileDarkLineW
           coordinates: 3,2
-        22:
+        18:
           color: '#FFFFFFFF'
           id: BrickTileDarkLineN
           coordinates: 2,1
-        23:
+        19:
           color: '#FFFFFFFF'
           id: BrickTileDarkLineN
+          coordinates: 4,3
+        20:
+          color: '#334E6DC8'
+          id: BrickTileWhiteLineW
+          coordinates: 1,0
+        21:
+          color: '#334E6DC8'
+          id: BrickTileWhiteLineW
+          coordinates: 3,2
+        22:
+          color: '#334E6DC8'
+          id: BrickTileWhiteLineN
+          coordinates: 2,1
+        23:
+          color: '#334E6DC8'
+          id: BrickTileWhiteLineN
           coordinates: 4,3
         24:
           color: '#334E6DC8'
-          id: BrickTileWhiteLineW
-          coordinates: 1,0
-        25:
-          color: '#334E6DC8'
-          id: BrickTileWhiteLineW
-          coordinates: 3,2
-        26:
-          color: '#334E6DC8'
-          id: BrickTileWhiteLineN
-          coordinates: 2,1
-        27:
-          color: '#334E6DC8'
-          id: BrickTileWhiteLineN
-          coordinates: 4,3
-        28:
-          color: '#334E6DC8'
           id: BrickTileWhiteCornerNw
           coordinates: 3,3
-        29:
+        25:
           color: '#334E6DC8'
           id: BrickTileWhiteCornerNw
           coordinates: 1,1
-        30:
+        26:
           color: '#FFFFFFFF'
           id: BrickTileDarkInnerNw
           coordinates: 3,1
-        31:
+        27:
           color: '#334E6DC8'
           id: BrickTileWhiteInnerNw
           coordinates: 3,1
-        75:
+        70:
           cleanable: True
           color: '#A4610695'
           id: Dirt
           coordinates: 4,1
-        76:
+        71:
           cleanable: True
           color: '#A4610695'
           id: Dirt
           coordinates: 3,0
-        77:
+        72:
           cleanable: True
           color: '#A4610695'
           id: Dirt
           coordinates: 2,0
-        78:
+        73:
           cleanable: True
           color: '#A4610695'
           id: Dirt
           coordinates: 3,1
-        79:
+        74:
           cleanable: True
           color: '#A4610695'
           id: DirtHeavy
           coordinates: 3,0
-        80:
+        75:
           cleanable: True
           color: '#A4610695'
           id: DirtHeavy
           coordinates: 4,1
-        81:
+        76:
           cleanable: True
           color: '#A4610695'
           id: DirtMedium
           coordinates: 3,0
-        110:
+        104:
           color: '#FFFFFFFF'
           id: WoodTrimThinLineS
           coordinates: 7,0
-        111:
-          color: '#FFFFFFFF'
-          id: WoodTrimThinLineW
-          coordinates: 6,1
-        112:
+        106:
           color: '#FFFFFFFF'
           id: WoodTrimThinInnerNw
           coordinates: 6,0
-        113:
+        107:
           color: '#FFFFFFFF'
           id: WoodTrimThinInnerSe
           coordinates: 6,0
-        114:
+        108:
           color: '#FFFFFFFF'
           id: WoodTrimThinInnerSw
           coordinates: 8,0
-        115:
+        109:
           color: '#FFFFFFFF'
           id: WoodTrimThinInnerSw
           coordinates: 6,2
@@ -662,7 +622,7 @@ entities:
       1,-5: 0
       1,-4: 0
       1,-3: 0
-      1,-2: 0
+      1,-2: 1
       1,-1: 0
       2,-14: 0
       2,-13: 0
@@ -676,7 +636,7 @@ entities:
       2,-5: 0
       2,-4: 0
       2,-3: 0
-      2,-2: 0
+      2,-2: 1
       2,-1: 0
       3,-13: 0
       3,-12: 0
@@ -708,10 +668,10 @@ entities:
       5,-8: 0
       5,-7: 0
       5,-6: 0
-      5,-5: 0
+      5,-5: 2
       5,-4: 0
       5,-3: 0
-      5,-2: 0
+      5,-2: 1
       5,-1: 0
       6,-10: 0
       6,-9: 0
@@ -756,7 +716,7 @@ entities:
       9,-9: 0
       9,-8: 0
       9,-7: 0
-      9,-6: 0
+      9,-6: 1
       9,-5: 0
       9,-4: 0
       9,-3: 0
@@ -768,11 +728,11 @@ entities:
       10,-9: 0
       10,-8: 0
       10,-7: 0
-      10,-6: 0
+      10,-6: 1
       10,-5: 0
       10,-4: 0
       10,-3: 0
-      10,-2: 0
+      10,-2: 1
       10,-1: 0
       11,-10: 0
       11,-9: 0
@@ -807,7 +767,7 @@ entities:
       3,2: 0
       3,3: 0
       3,4: 0
-      4,0: 0
+      4,0: 1
       4,1: 0
       4,2: 0
       4,3: 0
@@ -892,6 +852,36 @@ entities:
       - 0
       - 0
       - 0
+    - volume: 2500
+      temperature: 293.15
+      moles:
+      - 21.213781
+      - 79.80423
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - volume: 2500
+      temperature: 293.15
+      moles:
+      - 20.619795
+      - 77.56971
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
     type: GridAtmosphere
   - type: GasTileOverlay
   - type: RadiationGridResistance
@@ -928,7 +918,7 @@ entities:
   - pos: 3.5,-3.5
     parent: 0
     type: Transform
-  - SecondsUntilStateChange: -4999.6553
+  - SecondsUntilStateChange: -5368.293
     state: Closing
     type: Door
   - inputs:
@@ -1002,7 +992,7 @@ entities:
   - pos: 12.5,-3.5
     parent: 0
     type: Transform
-  - SecondsUntilStateChange: -5027.422
+  - SecondsUntilStateChange: -5396.0596
     state: Closing
     type: Door
   - inputs:
@@ -1028,7 +1018,7 @@ entities:
 - uid: 16
   type: LockerSalvageSpecialistFilled
   components:
-  - pos: 1.5,-1.5
+  - pos: 5.5,-1.5
     parent: 0
     type: Transform
 - uid: 17
@@ -1308,7 +1298,7 @@ entities:
   - pos: 9.5,-3.5
     parent: 0
     type: Transform
-  - SecondsUntilStateChange: -5024.2217
+  - SecondsUntilStateChange: -5392.8594
     state: Closing
     type: Door
   - inputs:
@@ -1617,7 +1607,7 @@ entities:
   - pos: 3.5,-2.5
     parent: 0
     type: Transform
-  - SecondsUntilStateChange: -4999.6553
+  - SecondsUntilStateChange: -5368.293
     state: Closing
     type: Door
   - inputs:
@@ -1884,7 +1874,7 @@ entities:
   - pos: 3.5,-1.5
     parent: 0
     type: Transform
-  - SecondsUntilStateChange: -4999.6553
+  - SecondsUntilStateChange: -5368.293
     state: Closing
     type: Door
   - inputs:
@@ -2465,7 +2455,7 @@ entities:
   components:
   - type: MetaData
   - type: Transform
-  - index: 15
+  - index: 10
     type: Map
   - type: PhysicsMap
   - type: Broadphase
@@ -2615,7 +2605,7 @@ entities:
 - uid: 248
   type: LockerSalvageSpecialistFilled
   components:
-  - pos: 2.5,-1.5
+  - pos: 5.5,-4.5
     parent: 0
     type: Transform
 - uid: 249
@@ -2769,12 +2759,6 @@ entities:
   - pos: 10.5,0.5
     parent: 0
     type: Transform
-- uid: 274
-  type: PresentRandom
-  components:
-  - pos: 10.500111,0.60060525
-    parent: 0
-    type: Transform
 - uid: 275
   type: ClothingOuterWinterMiner
   components:
@@ -2905,7 +2889,7 @@ entities:
   - pos: 2.5,-4.5
     parent: 0
     type: Transform
-  - SecondsUntilStateChange: -5740.852
+  - SecondsUntilStateChange: -6109.4897
     state: Opening
     type: Door
   - inputs:
@@ -2921,7 +2905,7 @@ entities:
   - pos: 1.5,-4.5
     parent: 0
     type: Transform
-  - SecondsUntilStateChange: -5740.852
+  - SecondsUntilStateChange: -6109.4897
     state: Opening
     type: Door
   - inputs:
@@ -2937,7 +2921,7 @@ entities:
   - pos: 0.5,-5.5
     parent: 0
     type: Transform
-  - SecondsUntilStateChange: -5740.852
+  - SecondsUntilStateChange: -6109.4897
     state: Opening
     type: Door
   - inputs:
@@ -2953,7 +2937,7 @@ entities:
   - pos: 0.5,-6.5
     parent: 0
     type: Transform
-  - SecondsUntilStateChange: -5740.852
+  - SecondsUntilStateChange: -6109.4897
     state: Opening
     type: Door
   - inputs:
@@ -2969,7 +2953,7 @@ entities:
   - pos: 1.5,-8.5
     parent: 0
     type: Transform
-  - SecondsUntilStateChange: -5740.852
+  - SecondsUntilStateChange: -6109.4897
     state: Opening
     type: Door
   - inputs:
@@ -2985,7 +2969,7 @@ entities:
   - pos: 6.5,-8.5
     parent: 0
     type: Transform
-  - SecondsUntilStateChange: -5740.852
+  - SecondsUntilStateChange: -6109.4897
     state: Opening
     type: Door
   - inputs:
@@ -3001,7 +2985,7 @@ entities:
   - pos: 5.5,-8.5
     parent: 0
     type: Transform
-  - SecondsUntilStateChange: -5740.852
+  - SecondsUntilStateChange: -6109.4897
     state: Opening
     type: Door
   - inputs:
@@ -3046,7 +3030,7 @@ entities:
   - pos: 7.5,4.5
     parent: 0
     type: Transform
-  - SecondsUntilStateChange: -5667.969
+  - SecondsUntilStateChange: -6036.607
     state: Opening
     type: Door
   - inputs:
@@ -3062,7 +3046,7 @@ entities:
   - pos: 8.5,4.5
     parent: 0
     type: Transform
-  - SecondsUntilStateChange: -5667.969
+  - SecondsUntilStateChange: -6036.607
     state: Opening
     type: Door
   - inputs:
@@ -3078,7 +3062,7 @@ entities:
   - pos: 9.5,4.5
     parent: 0
     type: Transform
-  - SecondsUntilStateChange: -5667.969
+  - SecondsUntilStateChange: -6036.607
     state: Opening
     type: Door
   - inputs:
@@ -3094,7 +3078,7 @@ entities:
   - pos: 9.5,2.5
     parent: 0
     type: Transform
-  - SecondsUntilStateChange: -5667.969
+  - SecondsUntilStateChange: -6036.607
     state: Opening
     type: Door
   - inputs:
@@ -3110,7 +3094,7 @@ entities:
   - pos: 10.5,2.5
     parent: 0
     type: Transform
-  - SecondsUntilStateChange: -5667.969
+  - SecondsUntilStateChange: -6036.607
     state: Opening
     type: Door
   - inputs:
@@ -3126,7 +3110,7 @@ entities:
   - pos: 11.5,1.5
     parent: 0
     type: Transform
-  - SecondsUntilStateChange: -5667.969
+  - SecondsUntilStateChange: -6036.607
     state: Opening
     type: Door
   - inputs:
@@ -3142,7 +3126,7 @@ entities:
   - pos: 11.5,0.5
     parent: 0
     type: Transform
-  - SecondsUntilStateChange: -5667.969
+  - SecondsUntilStateChange: -6036.607
     state: Opening
     type: Door
   - inputs:
