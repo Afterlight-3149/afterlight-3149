@@ -1,3 +1,4 @@
+using Content.Client._Afterlight.Latejoin;
 using Content.Client.Chat.Managers;
 using Content.Client.GameTicking.Managers;
 using Content.Client.LateJoin;
@@ -114,7 +115,7 @@ namespace Content.Client.Lobby
                 return;
             }
 
-            new LateJoinGui().OpenCentered();
+            new OuterRimLateJoinGui().OpenCentered(); // AFTERLIGHT EDIT
         }
 
         private void OnReadyToggled(BaseButton.ButtonToggledEventArgs args)

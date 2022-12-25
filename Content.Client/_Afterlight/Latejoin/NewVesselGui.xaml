@@ -1,0 +1,22 @@
+﻿<controls1:FancyWindow
+    xmlns="https://spacestation14.io"
+    xmlns:controls1="clr-namespace:Content.Client.UserInterface.Controls"
+    xmlns:customControls="clr-namespace:Content.Client.Administration.UI.CustomControls"
+    MinHeight="560"
+    MinWidth="500"
+    Title="Purchase">
+    <BoxContainer Orientation="Horizontal">
+        <BoxContainer Orientation="Vertical">
+            <Label Text="Available Vessels" Margin="10 3"/>
+            <customControls:HSeparator StyleClasses="LowDivider"/>
+            <ItemList Name="ShuttleList" HorizontalExpand="True" VerticalExpand="True" Margin="3 10"/>
+            <BoxContainer Orientation="Horizontal" Margin="0 3" HorizontalExpand="True" HorizontalAlignment="Center">
+                <Button Name="PurchaseShipButton" Text="Purchase" Disabled="True"/>
+            </BoxContainer>
+        </BoxContainer>
+        <customControls:VSeparator StyleClasses="LowDivider"/>
+        <BoxContainer Orientation="Vertical">
+            <RichTextLabel Name="VesselDescription" Margin="10 10"/>
+        </BoxContainer>
+    </BoxContainer>
+</controls1:FancyWindow>

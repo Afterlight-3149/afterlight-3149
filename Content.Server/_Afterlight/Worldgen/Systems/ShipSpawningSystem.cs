@@ -3,8 +3,11 @@ using Content.Server._Afterlight.Worldgen.Components;
 using Content.Server._Citadel.Worldgen;
 using Content.Server._Citadel.Worldgen.Components.Debris;
 using Content.Server._Citadel.Worldgen.Systems;
+using Content.Server.GameTicking;
 using Content.Server.Maps;
 using Content.Shared._Afterlight.Worldgen;
+using Robust.Server.Maps;
+using Robust.Server.Player;
 using Robust.Shared.Map;
 using Robust.Shared.Map.Components;
 using Robust.Shared.Prototypes;
@@ -17,6 +20,7 @@ namespace Content.Server._Afterlight.Worldgen.Systems;
 /// </summary>
 public sealed class ShipSpawningSystem : BaseWorldSystem
 {
+    [Dependency] private readonly GameTicker _gameTicker = default!;
     [Dependency] private readonly IMapManager _map = default!;
     [Dependency] private readonly IPrototypeManager _prototype = default!;
     [Dependency] private readonly IRobustRandom _random = default!;
@@ -29,6 +33,11 @@ public sealed class ShipSpawningSystem : BaseWorldSystem
 
     private void OnRequestShipSpawnEvent(RequestShipSpawnEvent msg, EntitySessionEventArgs args)
     {
+        if (!_prototype.TryIndex<GameMapPrototype>(msg.Vessel, out var proto))
+        {
+            return;
+        }
+
         ShipSpawningComponent map;
 
         {
@@ -38,17 +47,20 @@ public sealed class ShipSpawningSystem : BaseWorldSystem
 
         _random.Shuffle(map.FreeCoordinates);
 
-        if (!_prototype.TryIndex<GameMapPrototype>(msg.GameMapPrototype, out var proto))
-        {
-
-        }
-
         var safetyBounds = Box2.UnitCentered.Enlarged(48);
         foreach (var coords in map.FreeCoordinates)
         {
             if (_map.FindGridsIntersecting(coords.MapId, safetyBounds.Translated(coords.Position)).Any())
                 continue;
 
+            var loadOpts = new MapLoadOptions()
+            {
+                Offset = coords.Position,
+                Rotation = _random.NextAngle(),
+                LoadMap = false
+            };
+
+            _gameTicker.LoadGameMap(proto, coords.MapId, loadOpts);
 
         }
     }
@@ -77,6 +89,8 @@ public sealed class ShipSpawningSystem : BaseWorldSystem
                     comp.FreeCoordinates.Add(new MapCoordinates(WorldGen.ChunkToWorldCoordsCentered(cCoords), Comp<MapComponent>(comp.Owner).WorldMap));
                 }
             }
+
+            comp.Setup = true;
         }
     }
 }
