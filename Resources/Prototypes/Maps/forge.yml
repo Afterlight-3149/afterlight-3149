@@ -1,0 +1,15 @@
+- type: gameMap
+  id: forge
+  mapName: 'forge'
+  mapPath: /Maps/forge.yml
+  minPlayers: 0
+  stations:
+    Station:
+      mapNameTemplate: '{0} Forge {1}'
+      nameGenerator:
+        !type:NanotrasenNameGenerator
+        prefixCreator: '14'
+      overflowJobs: []
+      availableJobs:
+        Quartermaster: [ 1, 1 ]
+        SalvageSpecialist: [ 3, 3 ]
