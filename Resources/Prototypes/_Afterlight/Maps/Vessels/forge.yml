@@ -1,10 +1,10 @@
 - type: gameMap
-  id: forge
-  mapName: 'forge'
-  mapPath: /Maps/forge.yml
+  id: Forge
+  mapName: 'Forge'
+  mapPath: "/Maps/_Afterlight/Vessels/forge.yml"
   minPlayers: 0
   stations:
-    Station:
+    Forge:
       mapNameTemplate: '{0} Forge {1}'
       nameGenerator:
         !type:NanotrasenNameGenerator

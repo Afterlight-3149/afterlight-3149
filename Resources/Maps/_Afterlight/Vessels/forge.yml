@@ -885,7 +885,7 @@ entities:
     type: GridAtmosphere
   - type: GasTileOverlay
   - type: RadiationGridResistance
-  - id: forge
+  - id: Forge
     type: BecomesStation
 - uid: 1
   type: ReinforcedWindow
