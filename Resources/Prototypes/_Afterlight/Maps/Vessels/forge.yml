@@ -3,6 +3,9 @@
   mapName: 'Forge'
   mapPath: "/Maps/_Afterlight/Vessels/forge.yml"
   minPlayers: 0
+  validShip: true
+  description: |
+    A humble salvage vessel.
   stations:
     Forge:
       mapNameTemplate: '{0} Forge {1}'
