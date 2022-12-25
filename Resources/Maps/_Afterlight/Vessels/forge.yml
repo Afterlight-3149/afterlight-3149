@@ -2007,8 +2007,7 @@ entities:
     pos: 6.5,-9.5
     parent: 0
     type: Transform
-  - enabled: False
-    type: Thruster
+  - type: Thruster
 - uid: 160
   type: CableApcExtension
   components:
