@@ -53,8 +53,6 @@ public sealed partial class StationJobsSystem
     /// </remarks>
     public Dictionary<NetUserId, (string?, EntityUid)> AssignJobs(Dictionary<NetUserId, HumanoidCharacterProfile> profiles, IReadOnlyList<EntityUid> stations, bool useRoundStartJobs = true)
     {
-        DebugTools.Assert(stations.Count > 0);
-
         InitializeRoundStart();
 
         if (profiles.Count == 0)
@@ -292,7 +290,7 @@ public sealed partial class StationJobsSystem
                 assignedJobs.Add(player, (null, EntityUid.Invalid));
                 continue;
             }
-            
+
             _random.Shuffle(givenStations);
 
             foreach (var station in givenStations)
