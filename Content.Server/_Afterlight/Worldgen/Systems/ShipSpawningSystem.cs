@@ -13,6 +13,7 @@ using Content.Shared.Database;
 using Content.Shared.GameTicking;
 using Robust.Server.Maps;
 using Robust.Server.Player;
+using Robust.Shared.Configuration;
 using Robust.Shared.Enums;
 using Robust.Shared.Map;
 using Robust.Shared.Map.Components;
@@ -30,6 +31,7 @@ public sealed class ShipSpawningSystem : BaseWorldSystem
     [Dependency] private readonly StationSystem _station = default!;
     [Dependency] private readonly StationJobsSystem _stationJobs = default!;
     [Dependency] private readonly IAdminLogManager _log = default!;
+    [Dependency] private readonly IConfigurationManager _cfg = default!;
     [Dependency] private readonly IMapManager _map = default!;
     [Dependency] private readonly IPlayerManager _player = default!;
     [Dependency] private readonly IPrototypeManager _prototype = default!;
@@ -59,6 +61,9 @@ public sealed class ShipSpawningSystem : BaseWorldSystem
 
     private void OnLoadingMaps(LoadingMapsEvent ev)
     {
+        if (!_cfg.GetCVar<bool>(AfterlightCVars.ShipSpawningEnabled))
+            return;
+
         ev.Maps.Clear();
         var valid = _prototype.EnumeratePrototypes<GameMapPrototype>().Where(x => x.ValidShip).ToList();
 

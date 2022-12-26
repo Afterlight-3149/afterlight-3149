@@ -11,6 +11,7 @@ using Content.IntegrationTests.Tests.Destructible;
 using Content.IntegrationTests.Tests.DeviceNetwork;
 using Content.IntegrationTests.Tests.Interaction.Click;
 using Content.IntegrationTests.Tests.Networking;
+using Content.Server._Afterlight;
 using Content.Server._Citadel.Worldgen;
 using Content.Server.GameTicking;
 using Content.Shared.CCVar;
@@ -53,6 +54,7 @@ public static class PoolManager
         (CCVars.ThreadParallelCount.Name, "1", true),
         (CCVars.GameRoleTimers.Name, "false", false),
         (WorldgenCVars.WorldgenEnabled.Name, "false", false), // CITADEL EDIT
+        (AfterlightCVars.ShipSpawningEnabled.Name, "false", false), // AFTERLIGHT EDIT
     };
 
     private static int PairId;
