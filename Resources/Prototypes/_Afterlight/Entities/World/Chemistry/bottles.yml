@@ -3,9 +3,6 @@
   parent: BaseChemistryEmptyBottle
   suffix: Afterlight, Core, Random
   components:
-    - type: Tag
-      tags:
-        - Bottle
     - type: RandomReagentFill
       targetSolution: drink
       entries:
