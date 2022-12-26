@@ -22,4 +22,10 @@ public sealed class HeadsetComponent : Component
 
     [DataField("requiredSlot")]
     public SlotFlags RequiredSlot = SlotFlags.EARS;
+
+    /// <summary>
+    /// Used to dictate if this headset can transmit regardless of interference.
+    /// </summary>
+    [DataField("highPower")]
+    public bool HighPower = false;
 }

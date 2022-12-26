@@ -6,6 +6,6 @@
       biomes:
         - CitadelAsteroidsFallback
         - CitadelFailsafe
-        - CitadelAsteroidsStandard
+        - AfterlightAsteroidsStandard
     - type: ShipSpawning
       loadedSpawnArea: 8

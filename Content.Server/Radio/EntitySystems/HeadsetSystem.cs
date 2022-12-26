@@ -1,7 +1,9 @@
 using Content.Server.Chat.Systems;
+using Content.Server.Popups;
 using Content.Server.Radio.Components;
 using Content.Shared.Examine;
 using Content.Shared.Inventory.Events;
+using Content.Shared.Popups;
 using Content.Shared.Radio;
 using Robust.Server.GameObjects;
 using Robust.Shared.Network;
@@ -14,6 +16,7 @@ public sealed class HeadsetSystem : EntitySystem
     [Dependency] private readonly IPrototypeManager _protoManager = default!;
     [Dependency] private readonly INetManager _netMan = default!;
     [Dependency] private readonly RadioSystem _radio = default!;
+    [Dependency] private readonly PopupSystem _popup = default!; // Afterlight edit
 
     public override void Initialize()
     {
@@ -31,6 +34,16 @@ public sealed class HeadsetSystem : EntitySystem
             && TryComp(component.Headset, out HeadsetComponent? headset)
             && headset.Channels.Contains(args.Channel.ID))
         {
+            // Afterlight edit
+            var ev = new TryHeadsetTransmitEvent(headset.Owner, headset.HighPower);
+            RaiseLocalEvent(ref ev);
+
+            if (ev.Cancelled)
+            {
+                _popup.PopupEntity(Loc.GetString("afterlight-headset-transmit-failure"), uid, uid, PopupType.MediumCaution);
+                return;
+            }
+            // End Afterlight edit
             _radio.SendRadioMessage(uid, args.Message, args.Channel);
             args.Channel = null; // prevent duplicate messages from other listeners.
         }
@@ -104,3 +117,8 @@ public sealed class HeadsetSystem : EntitySystem
         args.PushMarkup(Loc.GetString("examine-headset-chat-prefix", ("prefix", ";")));
     }
 }
+
+// Afterlight edit
+[ByRefEvent]
+public record struct TryHeadsetTransmitEvent(EntityUid Transmitter, bool HighPower, bool Cancelled = false);
+// End afterlight edit
