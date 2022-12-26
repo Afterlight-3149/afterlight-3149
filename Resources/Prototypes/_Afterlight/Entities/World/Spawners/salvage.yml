@@ -1,0 +1,15 @@
+﻿- type: entity
+  name: Afterlight Salvage Material Crate Spawner
+  id: AfterlightSalvageMaterialCrateSpawner
+  parent: MarkerBase
+  components:
+    - type: Sprite
+      layers:
+        - state: red
+        - sprite: Structures/Storage/Crates/generic.rsi
+          state: icon
+    - type: RandomSpawner
+      prototypes:
+        - AfterlightCrateSalvageAssortedGoodies
+      chance: 0.9
+      offset: 0.0

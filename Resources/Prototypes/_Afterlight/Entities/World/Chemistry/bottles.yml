@@ -1,0 +1,52 @@
+﻿- type: entity
+  id: AfterlightRandomCoreChemistryBottle
+  parent: BaseChemistryEmptyBottle
+  suffix: Afterlight, Core, Random
+  components:
+    - type: Tag
+      tags:
+        - Bottle
+    - type: RandomReagentFill
+      targetSolution: drink
+      entries:
+        - id: Carbon
+          amount: 30
+        - id: Iron
+          amount: 30
+        - id: Phosphorus
+          amount: 30
+        - id: Silicon
+          amount: 30
+        - id: Potassium
+          amount: 30
+        - id: Water
+          amount: 30
+        - id: SulfuricAcid
+          amount: 30
+
+- type: entity
+  id: AfterlightRandomCoreChemistryVacuumFlask
+  parent: DrinkVacuumFlask
+  suffix: Afterlight, Core, Random
+  components:
+    - type: RandomReagentFill
+      targetSolution: drink
+      entries:
+        - id: Oxygen
+          amount: 50
+        - id: Hydrogen
+          amount: 50
+        - id: Nitrogen
+          amount: 50
+        - id: Chlorine
+          amount: 50
+        - id: Iodine
+          amount: 50
+          prob: 0.5
+        - id: Radium
+          amount: 50
+          prob: 0.5
+        - id: Fluorine
+          amount: 50
+        - id: Water
+          amount: 50

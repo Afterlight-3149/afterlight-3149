@@ -7,18 +7,18 @@
       densityNoiseChannel: Density
     - type: SimpleDebrisSelector
       debrisTable:
-        - id: CitadelAsteroidDebrisSmall
-        - id: CitadelAsteroidDebrisMedium
-        - id: CitadelAsteroidDebrisLarge
+        - id: AfterlightAsteroidDebrisSmall
+        - id: AfterlightAsteroidDebrisMedium
+        - id: AfterlightAsteroidDebrisLarge
           prob: 0.7
-        - id: CitadelAsteroidDebrisLarger
+        - id: AfterlightAsteroidDebrisLarger
           prob: 0.4
     - type: NoiseDrivenDebrisSelector
       noiseChannel: Wreck
       debrisTable:
-        - id: CitadelScrapDebrisSmall
-        - id: CitadelScrapDebrisMedium
-        - id: CitadelScrapDebrisLarge
+        - id: AfterlightScrapDebrisSmall
+        - id: AfterlightScrapDebrisMedium
+        - id: AfterlightScrapDebrisLarge
           prob: 0.5
     - type: NoiseRangeCarver
       ranges:
