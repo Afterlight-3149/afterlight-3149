@@ -15,10 +15,22 @@ public sealed partial class GeneratorWindow : FancyWindow
         IoCManager.InjectDependencies(this);
 
         EntityView.Sprite = IoCManager.Resolve<IEntityManager>().GetComponent<SpriteComponent>(vis);
+        TargetPower.IsValid += IsValid;
         TargetPower.ValueChanged += (_, args) =>
         {
             bui.SetTargetPower(args.Value);
         };
+    }
+
+    private bool IsValid(int arg)
+    {
+        if (arg < 0)
+            return false;
+
+        if (arg > (_lastState?.MaximumPower / 1000.0f ?? 0))
+            return false;
+
+        return true;
     }
 
 

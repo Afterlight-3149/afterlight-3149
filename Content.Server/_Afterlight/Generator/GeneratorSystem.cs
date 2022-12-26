@@ -63,7 +63,7 @@ public sealed class GeneratorSystem : SharedGeneratorSystem
 
     private void OnTargetPowerSet(EntityUid uid, FuelGeneratorComponent component, SetTargetPowerMessage args)
     {
-        component.TargetPower = args.TargetPower * 1000;
+        component.TargetPower = Math.Clamp(args.TargetPower, 0, component.MaxTargetPower / 1000) * 1000;
     }
 
     private void OnSolidFuelAdapterInteractUsing(EntityUid uid, SolidFuelGeneratorAdapterComponent component, InteractUsingEvent args)

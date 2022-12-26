@@ -13,12 +13,16 @@ public sealed class FuelGeneratorComponent : Component
     /// </summary>
     [DataField("remainingFuel"), ViewVariables(VVAccess.ReadWrite)]
     public float RemainingFuel = 0.0f;
-
     /// <summary>
     /// The generator's target power.
     /// </summary>
     [DataField("targetPower"), ViewVariables(VVAccess.ReadWrite)]
     public float TargetPower = 15_000.0f;
+    /// <summary>
+    /// The maximum target power.
+    /// </summary>
+    [DataField("maxTargetPower"), ViewVariables(VVAccess.ReadWrite)]
+    public float MaxTargetPower = 30_000.0f;
     /// <summary>
     /// The "optimal" power at which the generator is considered to be at 100% efficiency.
     /// </summary>
@@ -53,6 +57,7 @@ public sealed class SolidFuelGeneratorComponentBuiState : BoundUserInterfaceStat
 {
     public float RemainingFuel;
     public float TargetPower;
+    public float MaximumPower;
     public float OptimalPower;
     public float OptimalBurnRate; // Once every 120 seconds.
 
@@ -60,6 +65,7 @@ public sealed class SolidFuelGeneratorComponentBuiState : BoundUserInterfaceStat
     {
         RemainingFuel = component.RemainingFuel;
         TargetPower = component.TargetPower;
+        MaximumPower = component.MaxTargetPower;
         OptimalPower = component.OptimalPower;
         OptimalBurnRate = component.OptimalBurnRate;
     }

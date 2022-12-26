@@ -27,6 +27,8 @@
             prob: 0.03
           - id: AfterlightCrateFoodMRERandom
             prob: 0.03
+          - id: CrateSalvageEquipment
+            prob: 0.03
           - id: SalvageCanisterSpawner
             prob: 0.2
           - id: SalvageMobSpawner
@@ -45,6 +47,8 @@
             prob: 0.1
           - id: CrateEngineeringCableBulk
             prob: 0.03
+          - id: CrateSalvageEquipment
+            prob: 0.03
           - id: AfterlightCrateFoodMRERandom
             prob: 0.03
           - id: SalvageCanisterSpawner
@@ -58,6 +62,8 @@
           - id: AfterlightCrateSalvageChemistyGoodies
             prob: 0.03
           - id: AfterlightCrateFoodMRERandom
+            prob: 0.03
+          - id: CrateSalvageEquipment
             prob: 0.03
           - id: SalvageMobSpawner
             prob: 0.7
