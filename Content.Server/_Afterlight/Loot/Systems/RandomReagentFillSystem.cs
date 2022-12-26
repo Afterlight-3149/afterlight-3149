@@ -16,10 +16,10 @@ public sealed class RandomReagentFillSystem : EntitySystem
     /// <inheritdoc/>
     public override void Initialize()
     {
-        SubscribeLocalEvent<RandomReagentFillComponent, ComponentStartup>(OnStartup);
+        SubscribeLocalEvent<RandomReagentFillComponent, MapInitEvent>(OnStartup);
     }
 
-    private void OnStartup(EntityUid uid, RandomReagentFillComponent component, ComponentStartup args)
+    private void OnStartup(EntityUid uid, RandomReagentFillComponent component, MapInitEvent args)
     {
         if (!TryComp<SolutionContainerManagerComponent>(uid, out var container))
             return;
