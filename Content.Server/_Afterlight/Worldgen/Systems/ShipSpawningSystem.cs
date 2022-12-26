@@ -6,11 +6,14 @@ using Content.Server._Citadel.Worldgen.Systems;
 using Content.Server.Administration.Logs;
 using Content.Server.GameTicking;
 using Content.Server.Maps;
+using Content.Server.Station.Components;
+using Content.Server.Station.Systems;
 using Content.Shared._Afterlight.Worldgen;
 using Content.Shared.Database;
 using Content.Shared.GameTicking;
 using Robust.Server.Maps;
 using Robust.Server.Player;
+using Robust.Shared.Enums;
 using Robust.Shared.Map;
 using Robust.Shared.Map.Components;
 using Robust.Shared.Prototypes;
@@ -24,6 +27,8 @@ namespace Content.Server._Afterlight.Worldgen.Systems;
 public sealed class ShipSpawningSystem : BaseWorldSystem
 {
     [Dependency] private readonly GameTicker _gameTicker = default!;
+    [Dependency] private readonly StationSystem _station = default!;
+    [Dependency] private readonly StationJobsSystem _stationJobs = default!;
     [Dependency] private readonly IAdminLogManager _log = default!;
     [Dependency] private readonly IMapManager _map = default!;
     [Dependency] private readonly IPlayerManager _player = default!;
@@ -36,11 +41,20 @@ public sealed class ShipSpawningSystem : BaseWorldSystem
         SubscribeNetworkEvent<RequestShipSpawnEvent>(OnRequestShipSpawnEvent);
         SubscribeLocalEvent<LoadingMapsEvent>(OnLoadingMaps);
         SubscribeLocalEvent<TickerJoinGameEvent>(OnPlayerJoinGame);
+        _player.PlayerStatusChanged += PlayerOnPlayerStatusChanged;
+    }
+
+    private void PlayerOnPlayerStatusChanged(object? sender, SessionStatusEventArgs e)
+    {
+        if (e.NewStatus != SessionStatus.Connected)
+            return;
+
+        UpdateSpawnEligibility();
     }
 
     private void OnPlayerJoinGame(TickerJoinGameEvent ev)
     {
-        throw new NotImplementedException();
+        UpdateSpawnEligibility();
     }
 
     private void OnLoadingMaps(LoadingMapsEvent ev)
@@ -58,6 +72,12 @@ public sealed class ShipSpawningSystem : BaseWorldSystem
 
             ev.Maps.Add(map);
         }
+    }
+
+    private void UpdateSpawnEligibility()
+    {
+        var eligible = _station.Stations.All(x => Comp<StationJobsComponent>(x).PercentJobsRemaining < 0.75f);
+        RaiseNetworkEvent(new UpdateSpawnEligibilityEvent(eligible));
     }
 
     public void SpawnVessel(string vessel, IPlayerSession? user = null)
@@ -82,6 +102,14 @@ public sealed class ShipSpawningSystem : BaseWorldSystem
             if (_map.FindGridsIntersecting(coords.MapId, safetyBounds.Translated(coords.Position)).Any())
                 continue;
 
+            var ev = new TrySpawnShipEvent(proto.ID, coords);
+            RaiseLocalEvent(ref ev);
+
+            if (ev.CancelledGlobal)
+                return;
+            if (ev.CancelledLocal)
+                continue;
+
             var loadOpts = new MapLoadOptions()
             {
                 Offset = coords.Position,
@@ -92,6 +120,7 @@ public sealed class ShipSpawningSystem : BaseWorldSystem
             _gameTicker.LoadGameMap(proto, coords.MapId, loadOpts);
             if (user is { } session)
                 _log.Add(LogType.ALSpawnVessel, LogImpact.Medium, $"User {session} bought the vessel {proto.ID} ({proto.MapName})");
+            UpdateSpawnEligibility();
             return;
         }
     }
@@ -103,7 +132,6 @@ public sealed class ShipSpawningSystem : BaseWorldSystem
 
     public override void Update(float frameTime)
     {
-        //ew
         foreach (var comp in EntityQuery<ShipSpawningComponent>())
         {
             if (comp.Setup)

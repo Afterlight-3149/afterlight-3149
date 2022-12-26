@@ -1,4 +1,5 @@
-﻿using Content.Client.CrewManifest;
+﻿using Content.Client._Afterlight.Spawning;
+using Content.Client.CrewManifest;
 using Content.Client.GameTicking.Managers;
 using Content.Client.UserInterface;
 using Content.Client.UserInterface.Controls;
@@ -16,15 +17,17 @@ public sealed partial class OuterRimLateJoinGui : FancyWindow
     [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
     [Dependency] private readonly IConsoleHost _consoleHost = default!;
     private ClientGameTicker _gameTicker;
+    private ShipSpawningSystem _shipSpawning;
     private readonly NewVesselGui _vesselPurchaseUi = new();
 
     public OuterRimLateJoinGui()
     {
         RobustXamlLoader.Load(this);
         IoCManager.InjectDependencies(this);
-        //ShipDescription.SetMessage("Select a ship.");
         _gameTicker = EntitySystem.Get<ClientGameTicker>();
+        _shipSpawning = EntitySystem.Get<ShipSpawningSystem>();
         _gameTicker.LobbyJobsAvailableUpdated += UpdateUi;
+        _shipSpawning.EligibilityUpdate += UpdateUi;
         VesselSelection.VesselItemList.OnItemSelected += args =>
         {
             UpdateUi(_gameTicker.JobsAvailable);
@@ -53,9 +56,14 @@ public sealed partial class OuterRimLateJoinGui : FancyWindow
 
     private readonly Dictionary<string, OuterRimLateJoinJobButton> _buttons = new();
 
+    public void UpdateUi()
+    {
+        UpdateUi(_gameTicker.JobsAvailable);
+    }
+
     public void UpdateUi(IReadOnlyDictionary<EntityUid, Dictionary<string, uint?>> obj)
     {
-        //PurchaseButton.Disabled = !_gameTicker.PurchaseAvailable;
+        PurchaseButton.Disabled = !_shipSpawning.Eligible;
         if (VesselSelection.Selected is null)
         {
             CrewManifestButton.Visible = false;

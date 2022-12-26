@@ -8,7 +8,7 @@
     <BoxContainer Orientation="Horizontal">
         <BoxContainer Orientation="Vertical" Margin="4 4" HorizontalExpand="True" SizeFlagsStretchRatio="1">
             <lateJoin:VesselListControl Name="VesselSelection" VerticalExpand="True"/>
-            <Button HorizontalAlignment="Center" Name="PurchaseButton" Text="Purchase new..."/>
+            <Button HorizontalAlignment="Center" Name="PurchaseButton" Disabled="True" Text="Purchase new..."/>
         </BoxContainer>
         <cc:VSeparator StyleClasses="LowDivider"/>
         <BoxContainer Name="JobList" Orientation="Vertical" Margin="4 4" HorizontalExpand="True" SizeFlagsStretchRatio="1">

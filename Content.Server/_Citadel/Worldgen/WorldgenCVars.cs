@@ -15,7 +15,7 @@ public sealed class WorldgenCVars
     /// The worldgen config to use.
     /// </summary>
     public static readonly CVarDef<string> WorldgenConfig =
-        CVarDef.Create("citadel.worldgen.worldgen_config", "Default", CVar.SERVERONLY);
+        CVarDef.Create("citadel.worldgen.worldgen_config", "AfterlightDefault", CVar.SERVERONLY); // DEFAULT CHANGED BY AFTERLIGHT
 
     /// <summary>
     /// The maximum amount of time the GC can process, in ms.

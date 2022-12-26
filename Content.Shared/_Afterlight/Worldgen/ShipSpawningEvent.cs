@@ -14,4 +14,11 @@ public sealed class RequestShipSpawnEvent : EntityEventArgs
 }
 
 [Serializable, NetSerializable]
-public record UpdateSpawnEligibilityEvent(bool Eligible);
+public sealed class UpdateSpawnEligibilityEvent : EntityEventArgs
+{
+    public bool Eligible { get; init; }
+    public UpdateSpawnEligibilityEvent(bool eligible)
+    {
+        Eligible = eligible;
+    }
+}
