@@ -80,4 +80,8 @@ public enum LogType
     Stripping = 75,
     Stamina = 76,
     EntitySpawn = 77,
+
+    // Afterlight edits
+    ALSpawnVessel = -314900,
+    // End afterlight edits
 }

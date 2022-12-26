@@ -40,4 +40,7 @@ public sealed partial class GameMapPrototype : IPrototype
     /// The stations this map contains. The names should match with the BecomesStation components.
     /// </summary>
     public IReadOnlyDictionary<string, StationConfig> Stations => _stations;
+
+    [DataField("validShip")]
+    public bool ValidShip = false;
 }

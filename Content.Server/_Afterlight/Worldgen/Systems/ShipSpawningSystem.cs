@@ -3,9 +3,12 @@ using Content.Server._Afterlight.Worldgen.Components;
 using Content.Server._Citadel.Worldgen;
 using Content.Server._Citadel.Worldgen.Components.Debris;
 using Content.Server._Citadel.Worldgen.Systems;
+using Content.Server.Administration.Logs;
 using Content.Server.GameTicking;
 using Content.Server.Maps;
 using Content.Shared._Afterlight.Worldgen;
+using Content.Shared.Database;
+using Content.Shared.GameTicking;
 using Robust.Server.Maps;
 using Robust.Server.Player;
 using Robust.Shared.Map;
@@ -21,7 +24,9 @@ namespace Content.Server._Afterlight.Worldgen.Systems;
 public sealed class ShipSpawningSystem : BaseWorldSystem
 {
     [Dependency] private readonly GameTicker _gameTicker = default!;
+    [Dependency] private readonly IAdminLogManager _log = default!;
     [Dependency] private readonly IMapManager _map = default!;
+    [Dependency] private readonly IPlayerManager _player = default!;
     [Dependency] private readonly IPrototypeManager _prototype = default!;
     [Dependency] private readonly IRobustRandom _random = default!;
 
@@ -29,11 +34,35 @@ public sealed class ShipSpawningSystem : BaseWorldSystem
     public override void Initialize()
     {
         SubscribeNetworkEvent<RequestShipSpawnEvent>(OnRequestShipSpawnEvent);
+        SubscribeLocalEvent<LoadingMapsEvent>(OnLoadingMaps);
+        SubscribeLocalEvent<TickerJoinGameEvent>(OnPlayerJoinGame);
     }
 
-    private void OnRequestShipSpawnEvent(RequestShipSpawnEvent msg, EntitySessionEventArgs args)
+    private void OnPlayerJoinGame(TickerJoinGameEvent ev)
     {
-        if (!_prototype.TryIndex<GameMapPrototype>(msg.Vessel, out var proto))
+        throw new NotImplementedException();
+    }
+
+    private void OnLoadingMaps(LoadingMapsEvent ev)
+    {
+        ev.Maps.Clear();
+        var valid = _prototype.EnumeratePrototypes<GameMapPrototype>().Where(x => x.ValidShip).ToList();
+
+        var slotsLeft = _player.PlayerCount;
+
+        while (slotsLeft > 0)
+        {
+            var map = _random.Pick(valid);
+            var slotsToRemove = Math.Min(map.Stations.Sum(x => x.Value.AvailableJobs.Sum(x => x.Value[0] ?? 0)) / 2, 1);
+            slotsLeft -= slotsToRemove;
+
+            ev.Maps.Add(map);
+        }
+    }
+
+    public void SpawnVessel(string vessel, IPlayerSession? user = null)
+    {
+        if (!_prototype.TryIndex<GameMapPrototype>(vessel, out var proto))
         {
             return;
         }
@@ -61,8 +90,15 @@ public sealed class ShipSpawningSystem : BaseWorldSystem
             };
 
             _gameTicker.LoadGameMap(proto, coords.MapId, loadOpts);
-
+            if (user is { } session)
+                _log.Add(LogType.ALSpawnVessel, LogImpact.Medium, $"User {session} bought the vessel {proto.ID} ({proto.MapName})");
+            return;
         }
+    }
+
+    private void OnRequestShipSpawnEvent(RequestShipSpawnEvent msg, EntitySessionEventArgs args)
+    {
+        SpawnVessel(msg.Vessel, (IPlayerSession)args.SenderSession);
     }
 
     public override void Update(float frameTime)
