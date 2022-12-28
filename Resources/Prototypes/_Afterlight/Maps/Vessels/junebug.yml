@@ -1,0 +1,19 @@
+- type: gameMap
+  id: JuneBug
+  mapName: 'JuneBug'
+  mapPath: "/Maps/_Afterlight/Vessels/junebug.yml"
+  minPlayers: 0
+  validShip: true
+  description: |
+    An old gutted and refitted military personnel trasport.
+  stations:
+    JuneBug:
+      mapNameTemplate: '{0} JuneBug {1}'
+      nameGenerator:
+        !type:NanotrasenNameGenerator
+        prefixCreator: '14'
+      overflowJobs: []
+      availableJobs:
+        CargoTechnician: [ 1, 1 ]
+        Quartermaster: [ 1, 1 ]
+        SalvageSpecialist: [ 2, 2 ]
