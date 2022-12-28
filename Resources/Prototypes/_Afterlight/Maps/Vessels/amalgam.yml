@@ -5,7 +5,7 @@
   minPlayers: 0
   validShip: true
   description: |
-    A battered mining ship.
+    A battered industrial production ship.
   stations:
     Amalgam:
       mapNameTemplate: '{0} Amalgam {1}'
