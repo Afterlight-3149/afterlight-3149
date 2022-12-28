@@ -5,7 +5,7 @@
   minPlayers: 0
   validShip: true
   description: |
-    An old gutted and refitted military personnel trasport.
+    An old gutted and refitted military personnel transport.
   stations:
     JuneBug:
       mapNameTemplate: '{0} JuneBug {1}'
