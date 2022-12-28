@@ -1,0 +1,18 @@
+- type: gameMap
+  id: Amalgam
+  mapName: 'Amalgam' #like from undertale!!11!!
+  mapPath: "/Maps/_Afterlight/Vessels/amalgam.yml"
+  minPlayers: 0
+  validShip: true
+  description: |
+    A battered mining ship.
+  stations:
+    Amalgam:
+      mapNameTemplate: '{0} Amalgam {1}'
+      nameGenerator:
+        !type:NanotrasenNameGenerator
+        prefixCreator: '14'
+      overflowJobs: []
+      availableJobs:
+        Quartermaster: [ 1, 1 ]
+        SalvageSpecialist: [ 3, 3 ]
