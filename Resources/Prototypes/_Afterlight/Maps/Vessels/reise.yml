@@ -1,0 +1,19 @@
+- type: gameMap
+  id: Reise
+  mapName: 'Reise'
+  mapPath: "/Maps/_Afterlight/Vessels/reise.yml"
+  minPlayers: 0
+  validShip: true
+  description: |
+    A hardy construction vessel
+  stations:
+    Reise:
+      mapNameTemplate: '{0} Reise {1}'
+      nameGenerator:
+        !type:NanotrasenNameGenerator
+        prefixCreator: '14'
+      overflowJobs: []
+      availableJobs:
+        AtmosphericTechnician: [ 1, 1 ]
+        SalvageSpecialist: [ 2, 2 ]
+        StationEngineer: [ 1, 1 ]
