@@ -133,6 +133,8 @@ entities:
     type: Fixtures
   - type: OccluderTree
   - type: Shuttle
+  - type: BecomesStation
+    id: JuneBug
   - nextUpdate: 20837.7439327
     type: GridPathfinding
   - gravityShakeSound: !type:SoundPathSpecifier
