@@ -1,0 +1,18 @@
+- type: gameMap
+  id: ISVChip
+  mapName: 'ISV Chip'
+  mapPath: "/Maps/_Afterlight/Vessels/chip.yml"
+  minPlayers: 0
+  validShip: true
+  description: |
+    A tiny, floating piece of scrap
+  stations:
+    ISVChip:
+      mapNameTemplate: '{0} ISV Chip {1}'
+      nameGenerator:
+        !type:NanotrasenNameGenerator
+        prefixCreator: '14'
+      overflowJobs: []
+      availableJobs:
+        SalvageSpecialist: [ 2, 2 ]
+        Passenger: [ 1, 1 ]
