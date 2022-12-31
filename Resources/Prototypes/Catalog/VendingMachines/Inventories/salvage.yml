@@ -8,7 +8,7 @@
     FlashlightLantern: 2
     Floodlight: 2
     HandheldGPSBasic: 2
-    RadioHandheld: 2
+    #RadioHandheld: 2 AFTERLIGHT REDUCTION
     WeaponProtoKineticAccelerator: 2
     SurvivalKnife: 2
     ClothingEyesGlassesMeson: 4 # AFTERLIGHT EDIT
