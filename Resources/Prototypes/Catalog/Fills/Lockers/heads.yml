@@ -10,20 +10,16 @@
       - id: PlushieLizard
         prob: 0.1
       - id: ClothingHandsGlovesColorBrown
-      - id: ClothingOuterSuitFire
         prob: 0.5
       - id: ClothingShoesColorBrown
         prob: 0.7
       - id: ClothingHeadHatQMsoft
         prob: 0.8
-      - id: CargoRequestComputerCircuitboard
-      - id: CargoShuttleComputerCircuitboard
-      - id: CargoShuttleConsoleCircuitboard
       - id: CigPackGreen
         prob: 0.50
-      - id: DoorRemoteCargo
       - id: RubberStampQm
       - id: ClothingHeadsetAltCargo
+      - id: ClothingOuterWinterQM
 
 - type: entity
   id: LockerCaptainFilled
@@ -32,33 +28,23 @@
   components:
   - type: StorageFill
     contents:
-      - id: ClothingOuterArmorCaptainCarapace
-      - id: NukeDisk
-      - id: PinpointerNuclear
-      - id: CaptainIDCard
       - id: ClothingHeadHatCaptain
       - id: ClothingNeckCloakCap
       - id: ClothingHandsGlovesCaptain
-      - id: ClothingOuterHardsuitCap
       - id: ClothingMaskGasCaptain
-      - id: WeaponDisabler
-      - id: CommsComputerCircuitboard
       - id: ClothingHeadsetAltCommand
-      - id: SpaceCash1000
       - id: PlushieNuke
         prob: 0.1
       - id: CigarGoldCase
         prob: 0.25
-      - id: ClothingBeltSheathFilled
-      - id: DoorRemoteCommand
       - id: ClothingNeckCloakCapFormal
       - id: ClothingUniformJumpsuitCapFormal
       - id: ClothingUniformJumpskirtCapFormalDress
       - id: ClothingNeckBronzeheart
       - id: ClothingNeckGoldmedal
       - id: RubberStampCaptain
-      - id: WeaponAntiqueLaser
-      - id: JetpackCaptainFilled
+      - id: ClothingOuterWinterCap
+      - id: ClothingNeckMantleCap
 
 - type: entity
   id: LockerHeadOfPersonnelFilled
@@ -69,14 +55,7 @@
     contents:
       - id: ClothingNeckCloakHop
       - id: ClothingHeadHatHopcap
-      - id: HoPIDCard
-        prob: 0.9
       - id: ClothingHeadsetCommand
-      - id: BoxPDA
-      - id: BoxID
-      - id: BoxHeadset
-      - id: IDComputerCircuitboard
-      - id: WeaponDisabler
       - id: ClothingShoesColorBlack
         prob: 0.7
       - id: PlushieLizard
@@ -84,9 +63,10 @@
       - id: CigarGoldCase
         prob: 0.10
         # Fuck the HoP they don't deserve fucking cigars.
-      - id: DoorRemoteService
       - id: ClothingNeckGoldmedal
       - id: RubberStampHop
+      - id: ClothingOuterWinterHoP
+      - id: ClothingNeckMantleHOP
 
 - type: entity
   id: LockerChiefEngineerFilled
@@ -95,22 +75,19 @@
   components:
   - type: StorageFill
     contents:
-      - id: ClothingOuterHardsuitEngineeringWhite
       - id: ClothingMaskBreath
       - id: OxygenTankFilled
       - id: NitrogenTankFilled
       - id: ClothingNeckCloakCe
       - id: ClothingEyesGlassesMeson
-      - id: ClothingBeltChiefEngineerFilled
       - id: ClothingHeadHatBeretEngineering
-      - id: ClothingShoesBootsMagAdv
       - id: ClothingHandsGlovesColorYellow
       - id: CigarCase
         prob: 0.15
-      - id: DoorRemoteEngineering
       - id: RubberStampCE
-      - id: JetpackVoidFilled
       - id: ClothingHeadsetAltEngineering
+      - id: ClothingOuterWinterCE
+      - id: ClothingNeckMantleCE
 
 - type: entity
   id: LockerChiefMedicalOfficerFilled
@@ -119,25 +96,16 @@
   components:
   - type: StorageFill
     contents:
-      - id: MedkitFilled
       - id: ClothingHandsGlovesNitrile
-      #- name: ClothingEyesHudMedical #Removed until working properly
+      - id: ClothingEyesHudMedical
       - id: ClothingHeadsetAltMedical
       - id: ClothingCloakCmo
       - id: ClothingBackpackDuffelSurgeryFilled
       - id: ClothingOuterCoatLabCmo
       - id: ClothingMaskSterile
-      - id: ClothingOuterHardsuitMedical
-      - id: DiagnoserMachineCircuitboard
-      - id: VaccinatorMachineCircuitboard
-        prob: 0.25
-      - id: Hypospray
-      - id: HandheldCrewMonitor
-      - id: DoorRemoteMedical
       - id: RubberStampCMO
-      - id: MedicalTechFabCircuitboard
-      - id: MaterialBiomass
-        amount: 3
+      - id: ClothingOuterWinterCMO
+      - id: ClothingNeckMantleCMO
 
 - type: entity
   id: LockerResearchDirectorFilled
@@ -146,17 +114,14 @@
   components:
   - type: StorageFill
     contents:
-      - id: ResearchComputerCircuitboard
-      - id: ProtolatheMachineCircuitboard
-      - id: CircuitImprinterMachineCircuitboard
       - id: ClothingNeckCloakRd
       - id: ClothingHeadsetMedicalScience
-      - id: ClothingOuterHardsuitRd
       - id: PlushieSlime
         prob: 0.1
-      - id: DoorRemoteResearch
       - id: RubberStampRd
       - id: ClothingHeadsetAltScience
+      - id: ClothingOuterWinterRD
+      - id: ClothingNeckMantleRD
 
 - type: entity
   id: LockerHeadOfSecurityFilled
@@ -165,7 +130,6 @@
   components:
   - type: StorageFill
     contents:
-      - id: WeaponDisabler
       - id: ClothingHeadHatBeretHoS
       - id: ClothingHeadHatHoshat
       - id: ClothingNeckCloakHos
@@ -180,13 +144,11 @@
         prob: 0.1
       - id: ClothingUniformJumpskirtHoSParadeMale
         prob: 0.1
-      - id: ClothingOuterHardsuitSecurityRed
       - id: ClothingMaskGasSecurity
       - id: ClothingShoeSlippersDuck
         prob: 0.2
       - id: DrinkVacuumFlask
         prob: 0.8
-      - id: ClothingBeltSecurityFilled
       - id: ClothingHeadsetAltSecurity
       - id: ClothingEyesGlassesSecurity
       - id: ClothingShoesBootsJack
@@ -194,9 +156,8 @@
         prob: 0.50
       - id: PlushieSharkPink
         prob: 0.1
-      - id: DoorRemoteSecurity
       - id: ClothingUniformJumpskirtHosFormal
       - id: ClothingUniformJumpsuitHosFormal
       - id: RubberStampHos
-      - id: SecurityTechFabCircuitboard
-      - id: JetpackSecurityFilled
+      - id: ClothingOuterWinterHoS
+      - id: ClothingNeckMantleHOS
